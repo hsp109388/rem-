@@ -1,0 +1,212 @@
+@import './variable.less';
+
+@import './reset.less';
+
+body,html{
+    background-color: #f5f5f5;  
+}
+
+.head{
+    width:100%;
+    height:(88rem/32);
+    background-color:@head_bgc;
+    padding: (26rem/32) (36rem/32);
+    box-sizing: border-box;
+    position: relative;
+
+    i{  
+        display: inline-block;
+        width:(20rem/32);
+        height:(32rem/32);
+        background:url('../images/1.png') no-repeat;
+        background-size: (20rem/32) (32rem/32);
+    }
+    a{
+        display: inline-block;
+        color: @head_color;
+        font-size: (32rem/32);
+        margin-left: (5rem/32);
+    }
+
+        span{
+            position: absolute;
+
+            left: 45%;
+            display: inline-block;
+            font-size:(36rem/32); 
+            color: @head_color;
+        }
+    p{
+        position: absolute;
+        display: inline-block;
+        width:(43rem/32);
+        height:(10rem/32);
+        background:url('../images/2.png') no-repeat;
+        background-size: (43rem/32) (10rem/32);
+        right: (32rem/32);
+        top:(38rem/32);
+    }
+}
+
+
+
+.main{
+    width: 100%;
+
+    .banner{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .sou{
+        width: 100%;
+
+        .sou_t{
+            width: 100%;
+            height:(65rem/32);
+            padding: (16rem/32) (103rem/32) (16rem/32) (100rem/32);
+            box-sizing: border-box;
+            text-align: center;
+            background-color: @head_color;           
+
+            span:first-child{
+                color: @imp_color;
+                padding:(5rem/32) 0;
+                box-sizing: border-box;
+                border-bottom: 2px solid @imp_color;
+            }
+
+            span{
+                display: inline-block;
+                width: 32%;
+                font-size: (30rem/32);
+                // margin-left: 17.33333%;
+            }
+
+        }
+        .sou_b{
+            width: 100%;
+            height:(108rem/32);
+              
+            padding: (25rem/32) (36rem/32);
+            box-sizing: border-box;
+            position: relative;
+            
+            input{
+                width:100%;
+                height: (58rem/32);
+                border-radius: 15px;
+                border: 1px solid #ccc;
+                padding: 0 (30rem/32);
+                box-sizing: border-box;
+            }  
+            img{
+                position: absolute;
+                right: (54rem/32);
+                top: (36rem/32);
+                width: (38rem/32);
+                height: (38rem/32);
+            }      
+        }
+    }
+}
+
+
+
+.talk{
+        width: 100%;
+        height: (333rem/32);
+        background-color: @head_color;
+        padding: (36rem/32) (36rem/32);
+        box-sizing: border-box;
+
+        p{
+            font-size: (30rem/32);
+        }
+        .talk_b{
+            width: 100%;
+
+            img{
+                width: (438rem/32);
+                height: (79rem/32);
+                margin-top: (30rem/32);
+            }
+            .who{
+                width: 100%;
+                margin-top: (20rem/32);
+                span:first-child{
+                    font-size: (30rem/32);
+                    color: @imp_color;
+                }
+            }
+            
+        }
+}
+
+.talk2{
+    width: 100%;
+    height: (250rem/32);
+    background-color: @head_color;
+    padding: (36rem/32) (36rem/32);
+    box-sizing: border-box;
+    margin-top: (32rem/32);
+
+    p{
+        font-size: (30rem/32);
+    }
+    .talk_b2{
+        width: 100%;
+
+        img{
+            width: (438rem/32);
+            height: (79rem/32);
+            margin-top: (30rem/32);
+        }
+        .who2{
+            width: 100%;
+            margin-top: (20rem/32);
+            span:first-child{
+                font-size: (30rem/32);
+                color: @imp_color;
+            }
+            span:last-child{
+                font-size: (30rem/32);
+                color: @imp_color;
+                float: right;
+            }
+        }
+        
+    }
+}
+
+.bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: @head_color;
+    height: (98rem/32);
+    padding-top: (20rem/32);
+    box-sizing: border-box;
+    // text-align: center;
+    
+    ul{
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+
+        li{
+            width: 25%;
+            float: left;
+            text-align: center;
+            img{
+                width: (30rem/32);
+                height: (30rem/32);
+            }
+            span{
+                display: block;
+            }
+        }
+    }
+}
